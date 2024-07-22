@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <style>
+        body{
+            background-color: rgb(255, 251, 212) ;
+        }
+        .container{
+            background-color: rgb(241, 231, 140);
+            border-radius: 10px;
+            padding: 20px;
+            margin:200px 300px;
+            box-shadow: 2px 2px 30px black;
+        }
+        .ans{
+            /* background-color: rgb(236, 78, 78); */
+            background-color: white;
+            margin:5px 100px;
+            /* padding:10px; */
+        }
+        .ans button{
+            height:100%;
+            border:none;
+            padding:15px;
+            background-color: rgb(230, 45, 76);
+            color:white;
+
+        }
+        .container h1{
+            margin-left:60px;
+        }
+        .container>opt{
+            width:100%
+        }
+        .ans span{
+            padding:10px;
+        }
+    </style>
+</head>
+<body id="bg">
+
+    <div class="container">
+        <h1>In web design, what does CSS stands for?</h1>
+        <div class="ans" id="ans1">
+            <button id="option1" onclick="change1()">A</button>
+            <span>Counter Strike Source</span>
+        </div>
+        <div class="ans" id="ans2">
+            <button id="option2" onclick="change2()">B</button>
+            <span>
+                Corrective Style Sheet
+
+            </span>
+        </div>
+        <div class="ans" id="ans3">
+            <button id="option3" onclick="change3()">C</button>
+            <span>
+                Computer Style Sheet            
+
+            </span>
+        </div>
+        <div class="ans" id="crt-ans">
+            <button id="Crt_option" onclick="change4()">D</button>
+            <span>
+
+                Cascading Style Sheet
+            </span>
+        </div>
+    </div>
+</body>
+<script>
+    function change1(){
+        document.getElementById('option1').style="background-color:red; color:white;transition:0.5s;";
+        document.getElementById('ans1').style="background-color:rgb(236, 78, 78); color:white;transition:0.5s;"
+        // document.getElementById('bg').style="background-color:red;transition:all 0.5s;";
+        
+    }
+    function change2(){
+        document.getElementById('option2').style="background-color:red; color:white;transition:0.5s;";
+        // document.getElementById('bg').style="background-color:rgb(236, 78, 78);transition:all 0.5s;";
+        document.getElementById('ans2').style="background-color:rgb(206, 81, 81); color:white;transition:0.5s;"
+    }
+    function change3(){
+        // document.getElementById('bg').style="background-color:rgb(206, 81, 81);transition:all 0.5s;";
+        document.getElementById('option3').style="background-color:red; color:white";
+        document.getElementById('ans3').style="background-color:rgb(236, 68, 78); color:white"        
+    }
+    function change4(){
+        // document.getElementById('bg').style="background-color:rgb(95, 202, 101);transition:all 0.5s;";
+        document.getElementById('Crt_option').style="background-color:green; color:white;transition:0.5s;";
+        document.getElementById('crt-ans').style="background-color:rgb(95, 202, 101); color:black;transition:0.5s;"        
+
+    }
+    
+</script>
+</html>
